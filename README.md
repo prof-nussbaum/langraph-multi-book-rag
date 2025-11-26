@@ -75,9 +75,6 @@ pip install \
 
 
 ---
-
-Project Structure
-
 Project Structure
 
 main.py
@@ -133,7 +130,7 @@ Results <final combined answer here>
 
 Press Enter on an empty line to exit.
 
-Adding or Changing Textbooks
+Adding or Changing Textbooks - NOTE: Original textbooks in PDF format are not included in this repository - only the FAISS vector store is included. The textbooks were downloaded from a number of open source/usage sources; so feel free to use your own!
 
 Place new PDFs in the project root (same directory as main.py) and follow the naming pattern used in config.FILE_ROOTS (paths without .pdf).
 
@@ -168,5 +165,6 @@ You can enable the custom reranker by wiring it back in where noted in comments 
 Contributions:
 
 Feel free to open issues or PRs to improve modularity, metrics, or add new expert types (e.g., web RAG, tools, etc.).
+
 
 
