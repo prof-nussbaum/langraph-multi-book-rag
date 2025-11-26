@@ -1,4 +1,4 @@
-\# LGS Multi-Book Agentic RAG (LGSv55)
+\# Multi-Book Agentic RAG Demonstration
 
 
 
@@ -165,6 +165,7 @@ You can enable the custom reranker by wiring it back in where noted in comments 
 Contributions:
 
 Feel free to open issues or PRs to improve modularity, metrics, or add new expert types (e.g., web RAG, tools, etc.).
+
 
 
 
