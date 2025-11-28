@@ -78,19 +78,19 @@ pip install \
 Project Structure
 
 main.py
-Entry point. Sets up and runs the interactive CLI loop.
+Entry point. Sets up and runs the interactive Command Line Interface (CLI) loop.
 
 lgs_multi_book_rag/config.py
 Hyperparameters, model names, and textbook file roots.
 
 lgs_multi_book_rag/prompts.py
-All system prompts used in the workflow. These match the original strings exactly.
+All system prompts used in the workflow. 
 
 lgs_multi_book_rag/vectorstore.py
 Utilities to build/load FAISS vector stores per PDF, using Ollama embeddings.
 
 lgs_multi_book_rag/reranker.py
-Hand-crafted cosine-similarity reranker. (Currently not used, mirroring your latest code which has reranking commented out.)
+Hand-crafted cosine-similarity reranker. (Currently not used)
 
 lgs_multi_book_rag/app.py
 Main orchestration logic:
@@ -150,8 +150,6 @@ Book descriptions: book_desc.json
 
 Expert responses: Expert_0_Response.txt, Expert_1_Response.txt, etc.
 
-No-book expert response: Expert_NO BOOK_Response.txt
-
 Developer Notes
 
 Code is structured with functions, type hints, and docstrings but preserves the original prompts, hyperparameters, and relative paths.
@@ -165,6 +163,7 @@ You can enable the custom reranker by wiring it back in where noted in comments 
 Contributions:
 
 Feel free to open issues or PRs to improve modularity, metrics, or add new expert types (e.g., web RAG, tools, etc.).
+
 
 
 
