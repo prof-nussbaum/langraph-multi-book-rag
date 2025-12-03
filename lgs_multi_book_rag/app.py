@@ -757,7 +757,8 @@ def run_cli() -> None:
     # save_graph_image(graph, "parallel_book_vs_research.png")
 
     # Using native ASCII drawing
-    print(graph.get_graph().print_ascii())
+    # Skip drawing the ASCII graph of Agent Graph
+    # print(graph.get_graph().print_ascii())
 
     print("Type in the Human question or instructions to AI, or leave blank to exit.\n")
     while True:
@@ -788,3 +789,4 @@ def run_cli() -> None:
 
     print("Break here for debugging")
     raise SystemExit
+
