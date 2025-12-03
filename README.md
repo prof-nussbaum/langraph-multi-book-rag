@@ -63,7 +63,13 @@ It uses multiple textbooks (business and culinary) as separate "experts". For ea
 
 Python Packages
 
+First make sure pip is installed
+python.exe -m pip install --upgrade pip
+
+Then install the required packages
+
 pip install \
+    langchain \
     langchain-ollama \
     langchain-community \
     langgraph \
@@ -73,6 +79,96 @@ pip install \
     scikit-learn \
     ipython
 
+After all the packages are installed, you can check that they are installed with the correct version using the following command (response when running my Windows 11 computer shown as well).
+
+pip list
+---RESULT:
+Package                  Version
+------------------------ ----------
+aiohappyeyeballs         2.6.1
+aiohttp                  3.13.2
+aiosignal                1.4.0
+annotated-types          0.7.0
+anyio                    4.12.0
+asttokens                3.0.1
+attrs                    25.4.0
+certifi                  2025.11.12
+charset-normalizer       3.4.4
+colorama                 0.4.6
+dataclasses-json         0.6.7
+decorator                5.2.1
+executing                2.2.1
+faiss-cpu                1.13.0
+filelock                 3.20.0
+frozenlist               1.8.0
+fsspec                   2025.10.0
+greenlet                 3.2.4
+h11                      0.16.0
+httpcore                 1.0.9
+httpx                    0.28.1
+httpx-sse                0.4.3
+huggingface-hub          0.36.0
+idna                     3.11
+ipython                  9.8.0
+ipython_pygments_lexers  1.1.1
+jedi                     0.19.2
+joblib                   1.5.2
+jsonpatch                1.33
+jsonpointer              3.0.0
+langchain                1.1.0
+langchain-classic        1.0.0
+langchain-community      0.4.1
+langchain-core           1.1.0
+langchain-ollama         1.0.0
+langchain-text-splitters 1.0.0
+langgraph                1.0.4
+langgraph-checkpoint     3.0.1
+langgraph-prebuilt       1.0.5
+langgraph-sdk            0.2.12
+langsmith                0.4.53
+marshmallow              3.26.1
+matplotlib-inline        0.2.1
+multidict                6.7.0
+mypy_extensions          1.1.0
+numpy                    2.3.5
+ollama                   0.6.1
+orjson                   3.11.4
+ormsgpack                1.12.0
+packaging                25.0
+parso                    0.8.5
+pip                      25.3
+prompt_toolkit           3.0.52
+propcache                0.4.1
+pure_eval                0.2.3
+pydantic                 2.12.5
+pydantic_core            2.41.5
+pydantic-settings        2.12.0
+Pygments                 2.19.2
+python-dotenv            1.2.1
+PyYAML                   6.0.3
+regex                    2025.11.3
+requests                 2.32.5
+requests-toolbelt        1.0.0
+safetensors              0.7.0
+scikit-learn             1.7.2
+scipy                    1.16.3
+SQLAlchemy               2.0.44
+stack-data               0.6.3
+tenacity                 9.1.2
+threadpoolctl            3.6.0
+tokenizers               0.22.1
+tqdm                     4.67.1
+traitlets                5.14.3
+transformers             4.57.3
+typing_extensions        4.15.0
+typing-inspect           0.9.0
+typing-inspection        0.4.2
+urllib3                  2.5.0
+uuid_utils               0.12.0
+wcwidth                  0.2.14
+xxhash                   3.6.0
+yarl                     1.22.0
+zstandard                0.25.0
 
 ---
 Project Structure
@@ -163,6 +259,7 @@ You can enable the custom reranker by wiring it back in where noted in comments 
 Contributions:
 
 Feel free to open issues or PRs to improve modularity, metrics, or add new expert types (e.g., web RAG, tools, etc.).
+
 
 
 
