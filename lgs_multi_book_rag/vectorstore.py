@@ -8,7 +8,9 @@ import os
 from typing import List, Tuple
 
 import faiss
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+# Incorrect  from langchain.text_splitter import RecursiveCharacterTextSplitter
+# Corrected below
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.vectorstores import FAISS
 from langchain_community.docstore.in_memory import InMemoryDocstore
@@ -122,3 +124,4 @@ def load_or_build_vectorstores(
             )
 
     return book_vs, created_new_faiss
+
