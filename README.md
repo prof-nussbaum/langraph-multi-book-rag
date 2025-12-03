@@ -77,7 +77,8 @@ pip install \
     faiss-cpu \
     tqdm \
     scikit-learn \
-    ipython
+    ipython  \
+    pypdf
 
 After all the packages are installed, you can check that they are installed with the correct version using the following command (response when running my Windows 11 computer shown as well).
 
@@ -259,6 +260,7 @@ You can enable the custom reranker by wiring it back in where noted in comments 
 Contributions:
 
 Feel free to open issues or PRs to improve modularity, metrics, or add new expert types (e.g., web RAG, tools, etc.).
+
 
 
 
